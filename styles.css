@@ -143,6 +143,7 @@ header {
     width: 100%;
     height: 100%; /* Full height of the viewport */
     object-fit: cover; /* Ensure the image fully covers the area without being stretched */
+    object-position: center center; /* Keeps the main subject centered */
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
 }
@@ -350,11 +351,12 @@ header::after {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
-    background: linear-gradient(45deg, #000000, #222222, #444444, #111111);
-
+    background: linear-gradient(45deg, #e1ce00, #ffe100, #ffd900, #c09600);
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.6);
+    -webkit-text-stroke: 1px black; /* For WebKit browsers */
+    
 }
 
 .client-list {
@@ -367,7 +369,7 @@ header::after {
 
 .client-item {
     width: 300px;
-    background: rgba(214, 169, 136, 0.733);
+    background: rgb(255, 251, 0);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -388,8 +390,82 @@ header::after {
 
 
 
+/* about section */
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center; /* Keeps items vertically aligned */
+    justify-content: space-between; /* Ensures space between text and image */
+    padding: 80px 10%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-height: 550px;
+}
+
+/* CONTAINER */
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px; /* Adds space between text & image */
+}
+
+/* IMAGE SECTION */
+.about-image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; /* Ensures proper spacing */
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px; /* Controls size */
+    border-radius: 10px;
+    display: block;
+    z-index: 2;
+}
+
+/* Yellow Circle Background */
+.about-image::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 550px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    z-index: 1;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
+/* TEXT SECTION */
+.about-text {
+    flex: 1; /* Makes text take equal space */
+    text-align: left;
+    max-width: 50%; /* Ensures text doesn't stretch too much */
+}
+
+.about-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 500px;
+}
 
 
 /* Contact Form - Floating Window Style */
@@ -401,10 +477,10 @@ header::after {
 }
 .contact-container {
     display: flex;
-    max-width: 900px;
+    max-width: 1100px;
     width: 100%;
     background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.344);
     border-radius: 10px;
     overflow: hidden;
 }
