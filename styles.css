@@ -824,7 +824,7 @@ footer {
     }
 
     .about-image {
-        max-width: 80%;
+        max-width: 50%;
     }
 
     .about-image img {
@@ -845,8 +845,8 @@ footer {
     }
 
     .about-image::before {
-        width: 250px;
-        height: 400px;
+        width: 150px;
+        height: 200px;
         left: 50%;
         top: 30%;
     }
@@ -901,7 +901,7 @@ footer {
 
     .about-image::before {
         width: 200px;
-        height: 350px;
+        height: 200px;
     }
 
 }
