@@ -811,6 +811,46 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
+    .about-us {
+        flex-direction: column;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-image {
+        max-width: 80%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-image::before {
+        width: 250px;
+        height: 400px;
+        left: 50%;
+        top: 30%;
+    }
+
 }
 
 /* Additional Small Screen Optimizations */
@@ -850,4 +890,18 @@ footer {
         min-width: 70px;
         max-width: 90px;
     }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-image::before {
+        width: 200px;
+        height: 350px;
+    }
+
 }

@@ -1,0 +1,23 @@
+[33mcommit 515627cd0391b10ddc8c0f672eeb48160267b04e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: AltinALD <ae30690@seeu.edu.mk>
+Date:   Tue Apr 1 01:54:57 2025 +0200
+
+    Removed broken submodule reference
+
+[33mcommit 5d42d5b30a016c22bcbc860c389b516323c8262e[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: AltinALD <ae30690@seeu.edu.mk>
+Date:   Tue Apr 1 01:40:17 2025 +0200
+
+    Fixed PHPMailer setup and cleaned up repository
+
+[33mcommit fd95be99960cd689155a945cb2dac00a417725c0[m
+Author: AltinALD <ae30690@seeu.edu.mk>
+Date:   Tue Apr 1 01:35:14 2025 +0200
+
+    Updated PHPMailer and fixed email sending
+
+[33mcommit aee155199bef0065f9fd0149ed6bc282a5e0b2f3[m
+Author: AltinALD <ae30690@seeu.edu.mk>
+Date:   Sun Mar 30 04:09:01 2025 +0200
+
+    first commit
