@@ -1,10 +1,35 @@
+
+
+//language
+
 document.addEventListener("DOMContentLoaded", function () {
     const languageSelector = document.getElementById("language");
-    
+
+    // Set the correct language option based on the current page
+    const currentFile = window.location.pathname.split("/").pop();
+    if (currentFile.includes("index-de")) {
+        languageSelector.value = "de";
+    } else if (currentFile.includes("index-fr")) {
+        languageSelector.value = "fr";
+    } else {
+        languageSelector.value = "en"; // default to English
+    }
+
+    // Handle language change and redirect
     languageSelector.addEventListener("change", function () {
-        alert("Language changed to: " + this.value);
+        const selectedLang = this.value;
+
+        if (selectedLang === "en") {
+            window.location.href = "index.html";
+        } else if (selectedLang === "de") {
+            window.location.href = "index-de.html";
+        } else if (selectedLang === "fr") {
+            window.location.href = "index-fr.html";
+        }
     });
 });
+
+    
 
 // sticky button
 document.addEventListener("DOMContentLoaded", function () {
